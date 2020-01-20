@@ -1,38 +1,468 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+	--primary-font: 'Montserrat', sans-serif;
+	--secondary-font: 'Merriweather', serif;
+	--primary-color: #fff7f7;
+	--secondary-color: #dadada;
+	--third-color: #ff0140;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header start */
+
+.container-header {
+/* background-size: cover; */
+height: 100px;
+width: 100% !important;
+opacity: 0.9;
+position: fixed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.slick-slide{
+	outline: none !important;
+}
+
+.Carousel-image{
+  width: 250px;
+  height: 250px;
+  padding:0 20px;
+
+}
+
+.navbar {
+	background-color: transparent;
+	padding-top: 15px;
+}
+
+.navbar .navbar-brand img {
+	width: 200px;
+}
+
+.navbar .collapse {
+	position: absolute;
+	right: 0;
+}
+
+.navbar-logo{
+	margin-top: 15px;
+	margin-left: 40px;
+	width: 150px;
+	height: 70px;
+}
+
+
+.Colum-Image{
+	margin-left:  150px;
+}
+.Colum-Imagescnd{
+	margin-left:  120px;
+}
+
+.navbar .collapse .navbar-nav {
+	margin-top: 15px;
+	margin-right: 70px;
+}
+
+.Color-Bar{
+	background-color: #f26d71 !important;
+}
+
+.navbar .collapse .navbar-nav .nav-item {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: black;
+	margin-top: 0.5px;
+}
+
+.navbar .collapse .navbar-nav .nav-item:hover {
+	color: black;
+}
+
+.navbar .collapse .navbar-nav .nav-sign {
+	border: 1px solid;
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	border-radius: 30px;
+	width: 85px;
+	color:#f26d71;
+	margin-top: 0.1px;
+
+	
+}
+
+.navbar .collapse .navbar-nav .nav-sign .nav-link {
+	padding-left: 15px;
+}
+
+.search-bar{
+	margin-left: 350px;
+	/* margin-top: 70px; */
+	position: absolute;
+	top:35%;
+	left:17%
+
+}
+
+.navbar .navbar-search .search-box {
+	display: flex;
+	background-color: white;
+	border-radius: 5px;
+	height: 65px;
+}
+
+.Container-carousel{
+	padding: 30px 50px;
+	width: 100%;
+}
+
+.segment-image{
+	position: absolute;
+	display: block;
+	margin-left: 1000px;
+	bottom: -110px;
+	height: 100px;
+	width: 240px;
+	max-width: 240px;
+}
+.image-radius{
+	border-radius: 10px;
+}
+
+.Segment-second{
+	margin-top: 50px;
+	margin-left: 80px;
+	margin-right: 40px;
+	font-family: 'Roboto', sans-serif;
+	/* text-align: center !important; */
+
+
+}
+
+.subs-title{
+	color: black;
+	/* font-weight: bold; */
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+	margin-left: 80px;
+	margin-right: 80px;
+	display: flex;
+	height: 100px;
+	text-align: center;
+}
+
+.Text-title{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 3rem;
+	font-family: 'Roboto', sans-serif;
+	margin-top:80 px;
+	margin-bottom: 50px;
+	line-height: 70px;
+	font-weight: 700;
+	/* line-height: 90px; */
+}
+
+.segment-first{
+	
+	background-color: #f26d71;
+	color: black;
+	height: 200px;
+	margin-top: 120px;
+	margin-left: 80px;
+	margin-right: 70px;
+	display: flex;
+}
+
+.Title-style{
+	font-family: 'Bungee Shade', cursive;
+	font-size: 4rem;
+	color:black;
+	font-weight: bold;
+	margin-left: 290px;
+	height: 10px;
+	padding-top:15% ;
+	padding-left: 17%;
+}
+
+.Title-size{
+font-size: 2rem;
+color: var(--primary-color);
+font-weight: bold;
+font-family: 'Roboto', sans-serif;
+margin-top: 20px;
+margin-left: 12px;
+margin-bottom: 20px;
+color: black;
+
+}
+
+.navbar .navbar-search .search-box i {
+	font-size: 25px;
+	position: relative;
+	margin: auto;
+	padding-left: 7px;
+	
+}
+
+.Search-style{
+	background-image: url(https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+
+}
+
+.navbar .navbar-search .search-box .form {
+	position: relative;
+	right: 20px;
+	font-size: 1px;
+	margin: auto;
+}
+
+.navbar .navbar-search .search-box .form input {
+	padding-bottom: 50px;
+}
+
+.navbar .navbar-search .search-box .form input::placeholder {
+	font-size: 1.1rem;
+}
+
+/* Header end */
+
+/* Section 1 start */
+
+.container-section-one {
+	margin: 20px 0;
+}
+
+
+.container-section-one .section-one-carousel {
+	margin-top: -30px;
+	margin-left: -5px;
+}
+
+.container-section-one .section-one-carousel .carousel .carousel-inner {
+	padding-top: 60px;
+}
+
+.container-section-one
+	.section-one-carousel
+	.carousel
+	.carousel-inner
+	.carousel-item
+	.row {
+	margin-left: 10px;
+}
+
+.container-section-one
+	.section-one-carousel
+	.carousel
+	.carousel-inner
+	.carousel-item
+	.row
+	.col-md-4
+	.card {
+	width: 375px;
+	border: none;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.container-section-one
+	.section-one-carousel
+	.carousel
+	.carousel-inner
+	.carousel-item
+	.row
+	.col-md-4
+	.card
+	.card-image {
+	overflow: hidden;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.container-section-one
+	.section-one-carousel
+	.carousel
+	.carousel-inner
+	.carousel-item
+	.row
+	.col-md-4
+	.card
+	.card-image
+	img {
+	max-width: 100%;
+	transition: transform 0.5s;
+}
+
+.container-section-one
+	.section-one-carousel
+	.carousel
+	.carousel-inner
+	.carousel-item
+	.row
+	.col-md-4
+	.card
+	.card-image
+	img:hover {
+	transform: scale(1.1);
+}
+
+.container-section-one
+	.section-one-carousel
+	.carousel
+	.carousel-control-prev
+	.carousel-control-prev-icon {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 1px solid white;
+	background-color: black;
+}
+
+.container-section-one
+	.section-one-carousel
+	.carousel
+	.carousel-control-next
+	.carousel-control-next-icon {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 1px solid white;
+	background-color: black;
+}
+
+/* Section 1 end */
+
+/* =========Modal Login Start========== */
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
   }
-  to {
-    transform: rotate(360deg);
+  .cancelbtn {
+     width: 100%;
   }
 }
+
+/* =======Modal Login End======== */
+
+
+
