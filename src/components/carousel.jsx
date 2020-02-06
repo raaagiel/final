@@ -1,6 +1,12 @@
 import React, { Component } from "react";
+import { Image } from 'semantic-ui-react';
+
 import Slider from "react-slick";
-import { Image } from 'semantic-ui-react'
+import Template1 from '../image/template1.jpeg'
+import Template2 from '../image/template2.jpeg'
+import Template3 from '../image/template3.jpeg'
+import Template4 from '../image/template4.jpeg'
+
 
 class Carousel extends Component {
     render() {
@@ -16,28 +22,19 @@ class Carousel extends Component {
         };
         return (
             <div className='Container-carousel'>
-                <div className='Title-size'> Tokovidio Original Series </div>
+                <div className='Title-size'> Desain terbaik yang kami punya. </div>
                 <Slider {...settings}>
                     <div className='Carousel-image slick-slide'>
-                        <Image className='image-radius' src='https://www.10wallpaper.com/wallpaper/medium/1804/2018_Mamma_Mia_Here_We_Go_Again_4K_medium.jpg'></Image>
+                        <Image className='image-radius' src={Template1}></Image>
                     </div>
                     <div className='Carousel-image slick-slide'>
-                        <Image className='image-radius ' src='https://www.10wallpaper.com/wallpaper/medium/1712/Justice_League_Wonder_Woman_Aquaman_4K_HD_Poster_medium.jpg'></Image>
+                        <Image className='image-radius ' src={Template2}></Image>
                     </div>
                     <div className='Carousel-image slick-slide'>
-                        <Image className='image-radius' src='https://www.10wallpaper.com/wallpaper/medium/1804/Monte_Carlo_Movies_HD_Poster_medium.jpg'></Image>
+                        <Image className='image-radius' src={Template3}></Image>
                     </div>
                     <div className='Carousel-image slick-slide'>
-                        <Image className='image-radius' src='https://www.10wallpaper.com/wallpaper/medium/1210/The_Twilight_Saga_Breaking_Dawn_Movie_HD_Desktop_Wallpapers_medium.jpg'></Image>
-                    </div>
-                    <div className='Carousel-image slick-slide'>
-                        <Image className='image-radius' src='https://www.10wallpaper.com/wallpaper/medium/1209/The_Walking_Dead-American_TV_series_Wallpaper_medium.jpg'></Image>
-                    </div>
-                    <div className='Carousel-image slick-slide'>
-                        <Image className='image-radius' src='https://www.10wallpaper.com/wallpaper/medium/1205/Glee_American_TV_series_HD_Wallpaper_medium.jpg'></Image>
-                    </div>
-                    <div className='Carousel-image slick-slide'>
-                        <Image className='image-radius' src='https://www.10wallpaper.com/wallpaper/medium/1710/Baby_Driver_2017_High_Quality_Wallpaper_medium.jpg'></Image>
+                        <Image className='image-radius' src={Template4}></Image>
                     </div>
                 </Slider>
             </div>

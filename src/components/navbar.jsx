@@ -1,49 +1,36 @@
 import React, { Component } from 'react'
-import { Image, Input, Icon, } from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react'
+import {
+    Navbar,
+    Nav,
+} from 'react-bootstrap';
 
-import Logo from '../image/video-ezy-logo.png'
+import Logo from '../image/logoku.png'
 
 
 class navbar extends Component {
     render() {
         return (
             <div>
-                <div className="container-header">
-                    <nav className="navbar navbar-expand-lg navbar-light">
-                        <a className="navbar-brand navbar-logo" href="#">
-                            <Image src={Logo} />
-                        </a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon" />
-                        </button>
-                        <div>
-                            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div className="navbar-nav">
-                                    <a className="nav-item nav-link" href="#">Home</a>
-                                    <a className="nav-item nav-link" href="#">Features</a>
-
-                                    <div className="nav-sign ">
-                                        <a className="nav-item nav-link" href="#">Login</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div >
+                <Navbar className='Nav-color' expand="xl" fixed="top">
+                    <Navbar.Brand href="#home">
+                        <Image className='Nav-text' src={Logo} />
+                    </Navbar.Brand>
+                    <Nav className='Nav-textcolor'>
+                        <Nav.Link href="/login">Login</Nav.Link>
+                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    </Nav>
+                </Navbar>
 
                 <div className="Search-style">
                     <div className='Title-style'>
-                        Tokovidio
+                        UNDANGIN
                     </div>
-                    <div className='search-bar'>
-                        <Input size='huge'
-                            icon={<Icon name='search' circular link />}
-                            placeholder='Search...'
-                        />
-                    </div>
+                    <p className='Sub-style'>
+                        Beritahu Hari Spesial Anda Dengan Undangin
+                    </p>
                 </div>
             </div>
-
         )
     }
 }
